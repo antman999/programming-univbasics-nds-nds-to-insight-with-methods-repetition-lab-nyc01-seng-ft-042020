@@ -38,9 +38,10 @@ end
 def total_gross(source)
    result = []
   director_index = 0
+  total_gross = 0 
   while director_index < source.size do
     director = source[director_index]
-    result[director[:name]] = gross_for_director(director)
+    total_gross+=source(director)
     director_index += 1
   end
   result
